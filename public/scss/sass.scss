@@ -1,0 +1,325 @@
+$social-links: white;
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Otomanopee One', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.hamburger-icon {
+  font-size: 45px;
+  padding: 20px;
+}
+
+.hidecontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-container {
+  border: 1px solid transparent;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.hidden-menu {
+  display: none;
+}
+
+.nav-links {
+  font-size: 25px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  padding: 1rem;
+}
+
+.nav-links:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.content-container {
+  z-index: -1;
+}
+
+.sidebar-nav {
+  background-color: #2d2d2d;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.sidebar-links {
+  transition-duration: .5s;
+  color: white;
+  padding: 10px;
+}
+
+.sidebar-links:hover {
+  transform:translateX(4px);
+}
+
+.sidebar-container {
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+  left: -60px;
+}
+
+.move-social-arrow {
+  transition: .5s;
+  left: 0;
+}
+
+.github {
+  transition-duration: .5s;
+  color: $social-links;
+  &:hover {
+    color: purple;
+  }
+}
+
+.linkedin {
+  transition-duration: .5s;
+  color: $social-links;
+  &:hover {
+    color: #0E76A8;
+  }
+}
+
+.facebook {
+  transition-duration: .5s;
+  color: $social-links;
+  &:hover {
+    color: #0089ff;
+  }
+}
+
+.content-container {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-message {
+  text-align: center;
+  color: black;
+}
+
+.spiff-me {
+  font-size: 41px;
+  font-family: 'Caveat', cursive;
+  text-decoration-line: underline;
+  color: green;
+}
+
+.social-arrow {
+  transition: .5s;
+  margin-left: 10px;
+}
+
+.social-arrow:hover {
+  transform: rotate(180deg);
+}
+
+.avatar-bg {
+  position: absolute;
+  width: 100%;
+}
+
+.blue {
+  color: blue;
+}
+
+.pink {
+  color: pink;
+}
+
+.purple {
+  color: purple;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow
+}
+
+.seagreen {
+  color: seagreen;
+}
+
+.square-one {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+  z-index: -1;
+  right: 59%;
+  top: -68%;
+}
+
+.square-two {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #7cffb1;
+  color: white;
+  z-index: -1;
+  right: 31%;
+  top: 103%;
+}
+
+.developer-stamp {
+  position: absolute;
+  top: 290%;
+  left: -116px;
+  font-size: 35px;
+  bottom: 14%;
+  transform: rotate(270deg);
+}
+
+.art-img {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-image: url('../imgs/image2.jpg');
+  background-position: center;
+}
+
+.name-focus {
+  font-family: 'Caveat', cursive;
+}
+
+.work-container {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.work-box-one {
+  background-color: #ff9f9f;
+  width: 50%;
+  &:hover {
+
+  }
+}
+
+.work-box-two {
+  width: 50%;
+}
+
+.pokemon-js-content {
+  color: white;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+}
+
+.page-button {
+  color: #fff;
+  background-color: #74dc74;
+  padding: 15px;
+  border-radius: .25rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  border: 1px solid transparent;
+  transition: .5s;
+  &:hover {
+    transition: .5s;
+    opacity: .5;
+  }
+}
+
+.repo-button {
+  color: #fff;
+  background-color: #36a2ff;
+  padding: 15px;
+  border-radius: .25rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  border: 1px solid transparent;
+  transition: .5s;
+  &:hover {
+    transition: .5s;
+    opacity: .5;
+  }
+}
+
+.blogpost-content {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px)  {
+  .work-container {
+    flex-direction: column;
+  }
+  .work-box-one {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .pokemon-js-content {
+    position: static;
+    width: 100%;
+  }
+
+  .work-box-two {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .blogpost-content {
+    width: 100%;
+    position: static;
+  }
+}

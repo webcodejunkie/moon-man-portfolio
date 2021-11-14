@@ -1,0 +1,6 @@
+# ignore these folder / files
+
+node_modules/
+node_modules
+
+public/.sass-cache/
